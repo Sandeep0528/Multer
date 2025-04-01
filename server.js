@@ -9,7 +9,7 @@ app.use(express.json())
 
 
 const storage = multer.diskStorage({
-    destination: "./Uploaded Images/",
+    destination: "./UploadedImages/",
     filename: function (req, file, cb) {
         try {
             cb(null, file.originalname)
